@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #align
+        {
+            text-align: center;
+            height: 150px;
+            width: 350px; 
+            border: 2px solid green;
+            background-color: chocolate;
+            border-radius: 5px;
+            
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+        #alig
+        {
+            text-align: center;
+            background-color:green;
+            border-radius: 5px;
+            width: 350px;
+            margin-left: 100px;
+        }
+        #input1
+        {
+            text-align: center;
+            height: 125px;
+            
+            width: 150px;
+            margin-top: 10px;
+        }
+        #input2
+        {
+            text-align: center;
+            height: 125px;
+            
+            width: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="align" >
+        <input type="number" name="" id="input1" placeholder="Enter First Number" >
+        <input type="number" name="" id="input2" placeholder="Enter Second Number" >
+    </div>
+   
+    <div id="alig" >
+        <button   onclick="add()">      Add     </button>
+        <button   onclick="subTract()"> SubTract</button>
+        <button   onclick="multiply()"> Multiply</button>
+        <button   onclick="divide()">   Divide  </button>
+    </div>
+   
+</body>
+</html>
+<script>
+    function add()
+    {
+        output = document.getElementById("input1").value
+        output2 = document.getElementById("input2").value
+        alert (+(output)+(+output2))
+    }
+    function subTract()
+    {
+        output = document.getElementById("input1").value
+        output2 = document.getElementById("input2").value
+        alert (output-output2)
+    }
+    function multiply()
+    {
+        output = document.getElementById("input1").value
+        output2 = document.getElementById("input2").value
+        alert (output*output2)
+    }
+    function divide()
+    {
+        output = document.getElementById("input1").value
+        output2 = document.getElementById("input2").value
+        alert (output/output2)
+    }
+    
+</script>
