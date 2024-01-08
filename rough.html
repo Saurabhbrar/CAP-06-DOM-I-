@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #between
+        {
+            margin-left: 100px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+<div id="between" >
+        <input type="text" name="name" id="box">
+    <h1 id="tag" ></h1>
+    <button onclick="myfun()" >Click me</button>
+</div>
+    
+</body>
+</html>
+<script>
+    function myfun()
+    {
+        
+        let output = document.getElementById("box").value
+        document.getElementById("tag").innerText = output
+           
+        
+    }  
+</script>
